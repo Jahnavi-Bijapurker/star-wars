@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto Slab", serif;
+    background-image: url(./Assets/background.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  #root{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+  .App {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+   
   }
+.planets{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
 }
+  
+  h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+  }
+  
+  .planet-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(154, 58, 239, 0.5); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+  }
+  
+  .planet-card ul li {
+    list-style-type: none;
+  }
+  
+  button {
+    border: 2px solid #f60c4e;
+    outline: 0;
+    padding: 15px 10px;
+    cursor: pointer;
+    background-color: #f60c4e;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    font-size: 21px;
+  }
+  
+  @media(max-width:1000px){
+    .planets{
+        width: 70%;
+    }
+  }
+  
+  @media(max-width:800px){
+    .planets{
+        width: 80%;
+    }
+  }
+
+  @media(max-width:900px){
+    .planets{
+        width: 90%;
+    }
+  }
